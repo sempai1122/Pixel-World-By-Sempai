@@ -1,0 +1,44 @@
+/* PIXEL EARTH — Global Styles */
+
+:root {
+  --color-bg:       #0a0a0f;
+  --color-surface:  #141820;
+  --color-border:   rgba(100, 160, 100, 0.2);
+  --color-text:     #d0e0c8;
+  --color-accent:   #70cc60;
+  --color-danger:   #e05040;
+  --color-warning:  #f0c840;
+  --font-mono:      'Courier New', 'Consolas', monospace;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  font-family: var(--font-mono);
+  color: var(--color-text);
+  overflow: hidden;
+}
+
+button {
+  font-family: var(--font-mono);
+}
+
+select, option {
+  font-family: var(--font-mono);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
